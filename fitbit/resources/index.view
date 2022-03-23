@@ -1,0 +1,36 @@
+<svg viewport-fill="white">
+  <svg id = "time-display">
+    <text id = 'localTime'>*******************
+    </text>
+    <!-- <rect id = "background" class = "cycleground-fill"/>
+    <use id = "timeCycle" href = "#cycleview">
+      <use href = "#cycleview-item" class = "cycle-item">
+        <text id = "localTime">********************</text>
+      </use>
+      <use href = "#cycleview-item" class = "cycle-item"><text>timezone 2</text></use>
+      <use href = "#cycleview-item" class = "cycle-item"><text>timezone 3</text></use>
+      <use href = "#cycleview-item" class = "cycle-item"><text>timezone 4</text></use>
+    </use> -->
+  </svg>
+  <svg id = "zone-selector">
+    <use id="time-list" href="#tile-list" class = "horizontal-pad">
+      <use id="Local" href="#time-item"> 
+        <set href="#text" attributeName="text-buffer" to="Local(UTC-7)" />
+      </use>
+      <use id="Beijing" href="#time-item"> 
+        <set href="#text" attributeName="text-buffer" to="Beijing(UTC+8)" />
+      </use>
+      <use id="New York" href="#time-item"> 
+        <set href="#text" attributeName="text-buffer" to="New York(UTC-4)" />
+      </use>
+      <use id="London" href="#time-item"> 
+        <set href="#text" attributeName="text-buffer" to="London(UTC)" />
+      </use>
+    </use>
+  </svg>
+  <svg id = "open-button">
+    <use id = "myButton" href="#text-button"  class = "text-button bottom application-fill">
+      <set href="#text" attributeName="text-buffer" to="Select Time Zone" />
+    </use>
+  </svg>
+</svg>
